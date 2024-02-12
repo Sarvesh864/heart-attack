@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning</title>
+</head>
+<body>
+    <fieldset><legend><h1 style="border:green; border-width:5px; border-style:solid;"><center><b>Heart Attack Prediction Based on Machine Learning</b></center></h1></legend>
+    
+    <h2 style="color:red;"> ADD HEART DETAIL:</h2>
+    <form action="/predict" method=["GET","POST"]>
+        <p>
+        <label for="age">Enter Your Age :</label>
+        <input type="text" name="age" id="age" placeholder="Enter Age">
+        <br><br>
+        <label for="sex">Enter You Gender(1 = male; 0 = female) :</label>
+        <input type="text" name="sex" id="sex" placeholder="Enter gender">
+        <br><br>
+        <label for="chol">Enter Your Cholestrol in mg/dL :</label>
+        <input type="text" name="chol" id="chol" placeholder="Enter chol ">
+        <br><br>
+        <label for="thalachh">Enter thalach (Maximum heart rate):
+        </label>
+        <input type="text" name="thalachh" id="thalachh" placeholder="Enter thalach ">
+        <br><br>
+        <label for="cp">Enter Your ChestPain :</label>
+        <input type="text" name="cp" id="cp" placeholder="Enter cp">
+        <br><br>
+        <label for="trtbps">Enter Your trtbps (Rest in blood pressure)  :</label>
+        <input type="text" name="trtbps" id="trtbps" placeholder="Enter trtbps">
+        <br><br>
+        <label for="restecg">Enter Your restecg (Resting electrocardiographic results, 1=Abnormal; 0=Normal):</label>
+        <input type="text" name="restecg" id="restecg" placeholder="Enter restecg">
+        <br><br>
+        <label for="exng">Enter Your exng (Exercise induced angina, 1=Yes; 0=No):</label>
+        <input type="text" name="exng" id="exng" placeholder="Enter exng">
+        <br><br>
+        <label for="oldpeak">Enter Your oldpeak (Previous peak):</label>
+        <input type="text" name="oldpeak" id="oldpeak" placeholder="Enter oldpeak">
+        <br><br>
+        <label for="slp">Enter Your slp (Slope):</label>
+        <input type="text" name="slp" id="slp" placeholder="Enter slp">
+        <br><br>
+        <label for="caa">Enter Your caa (Coronary artery anomalies, Range= 0 to 3) :</label>
+        <input type="text" name="caa" id="caa" placeholder="Enter caa">
+        <br><br>
+        <label for="thall">Enter Your thall (Thallium stress, Range= 0 to 3):</label>
+        <input type="text" name="thall" id="thall" placeholder="Enter thall">
+        <br><br>
+        <label for="fbs">Enter Your fbs (Fasting blood pressure, 1=Yes; 0=No):</label>
+        <input type="text" name="fbs" id="fbs" placeholder="Enter fbs">
+        <br><br>
+        <button style="background-color:yellow"type="submit">Predict</button>
+    </p>
+    </form>
+
+    <h1> {{prediction_text}}</h1>
+</fieldset>
+</body>
+</html>
